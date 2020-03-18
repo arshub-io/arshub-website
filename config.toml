@@ -14,3 +14,7 @@ theme = "terrassa"      # Your Hugo theme
 
 [params.hero]
     textColor = "" # Empty for default color
+
+[params.social]
+    twitter = ""
+    instagram = ""
