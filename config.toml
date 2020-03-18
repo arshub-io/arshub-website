@@ -1,0 +1,16 @@
+baseurl = "/"           # The base URL of your Hugo site
+title = "ArsHub"     # The title of your Hugo site
+author = "ArsHub"   # The author name
+googleAnalytics = ""    # Your Google Analytics tracking ID
+enableRobotsTXT = true
+language = "ja_jp"
+paginate = 7            # The numbers of posts per page
+theme = "terrassa"      # Your Hugo theme
+
+[params]
+  description = "" # Description for the meta description tag
+  favicon = ""     # Relative URL for your favicon
+  logo = "images/logo.svg"        # Absolute URL for your logo
+
+[params.hero]
+    textColor = "" # Empty for default color
