@@ -20,5 +20,5 @@ theme = "terrassa"      # Your Hugo theme
     showAuthor = false
     showDate = true
     showTags = true
-    dateFormat = "Monday, Jan, 2006"
+    dateFormat = "2006/1/1"
     showPostHome = 2
