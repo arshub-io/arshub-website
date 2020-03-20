@@ -1,6 +1,13 @@
-<section class="section">
-    <h1 class="section__title">{{ .Title }}</h1>
-    <div class="section__content">
-        {{ .Content }}
+<section class="card">
+  <header class="card-header has-background-white-ter">
+    <h1 class="card-header-title">
+      <a href="{{ .Permalink }}" class="card__header__link" alt="{{ .Title }}.">
+        {{ .Title }}
+      </a>
+</h1>
+    <p class="subtitle">{{ dateFormat $.Site.Params.posts.dateFormat .Date }}</p>
+  </header>
+    <div class="card-content">
+        {{ .Content | truncate 10 }}
     </div>
 </section>

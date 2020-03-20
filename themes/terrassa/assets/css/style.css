@@ -201,7 +201,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-items: center;
-	min-height: 90vh;
+	/* min-height: 90vh; */
 }
 
 /* CARD */

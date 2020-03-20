@@ -1,14 +1,6 @@
-{{ $items := (where $.Site.RegularPages "Type" "sections") }}
-{{ $len := (len $items) }}
-
-{{ range $i, $e := $items }}
-{{ partial "section.html" . }}
-
-{{ if ne (add $i 1) $len }}
-
-{{ if $.Site.Params.separator.show }}
-{{ partial "separator.html" . }}
-{{ end  }}
-
-{{ end }}
-{{ end}}
+<div class="content">
+  <h1>What's New</h1>
+  {{ range first $.Site.Params.posts.showPostHome (where $.Site.RegularPages "Type" "posts") }}
+    {{ partial "section.html" . }}
+  {{ end }}
+</div>
