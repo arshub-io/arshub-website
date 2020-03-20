@@ -1,6 +1,16 @@
-<div class="col-md-6 offset-md-3">
-  <h1>{{ .name }}</h1>
-  <img src={{ .img }} width=300></img>
-  <div>{{ .job }}</div>
-  <div>{{ .bio }}</div>
+<div class="card-image">
+  <figure class="image">
+    <img src={{ .img }}></img>
+  </figure>
+</div>
+<div class="card-content">
+  <div class="media">
+    <div class="media-content">
+      <p class="title is-4">{{ .name }}</p>
+      <p class="subtitle is-6">{{ .job }}</p>
+    </div>
+  </div>
+  <div class="content">
+    {{ .bio }}
+  </div>
 </div>

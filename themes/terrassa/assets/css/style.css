@@ -196,21 +196,21 @@
 }
 
 /* CONTENT */
-.content {
+/* .content {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-items: center;
 	min-height: 90vh;
-}
+} */
 
 /* CARD */
-.card {
+/* .card {
 	margin-bottom: 1.75rem;
 	max-width: 900px;
 	text-justify: distribute;
 	width: 70%;
-}
+} */
 
 .card__header__link {
 	color: var(--primary-text);

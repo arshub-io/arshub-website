@@ -77,9 +77,9 @@
 		margin: 2.75rem 9%;
 	}
 
-	.card {
+	/* .card {
 		width: 85%;
-	}
+	} */
 
 	.contact__form {
 		grid-template-areas: "name" "email" "msg" "submit";
@@ -143,9 +143,9 @@
 		width: 20rem;
 	}
 
-	.card {
+	/* .card {
 		width: 90%;
-	}
+	} */
 
 	.pagination {
 		width: 90%;
