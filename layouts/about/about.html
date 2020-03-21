@@ -1,16 +1,16 @@
 {{ define "main" }}
-<main>
-  <div class="container">
+<div class="container">
+  <div class="section">
     <h1 class="is-size-1-touch is-size-2-desktop">{{ .Title }}</h1>
-    <div class="columns is-mobile is-multiline">
+    <div class="row columns is-mobile is-multiline">
       {{ range $.Site.Data.profiles }}
-        <div class="column is-12-mobile is-6-tablet is-4-desktop">
-          <div class="card">
+        <div class="column is-12-mobile is-4-tablet">
+          <div class="card large">
             {{ partial "profile.html" . }}
           </div>
         </div>
       {{ end }}
     </div>
   </div>
-</main>
+</div>
 {{ end }}
