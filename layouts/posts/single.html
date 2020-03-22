@@ -1,0 +1,36 @@
+{{ define "main" }}
+<article class="content is-large">
+    <header class="content-header">
+        <h1 class="title">{{ .Title }}</h1>
+        {{ if .Description }}
+        <p class="subtitle">{{ .Description }}</p>
+        {{ end }}
+        {{ if ne .Type "page" }}
+        {{ if and $.Site.Params.posts.showDate $.Site.Params.posts.showAuthor }}
+        <p class="subtitle">
+          {{ dateFormat $.Site.Params.posts.dateFormat .Date }} By {{ $.Params.author }}.
+        </p>
+        {{ else if $.Site.Params.posts.showDate }}
+        <p class="subtitle">{{ dateFormat $.Site.Params.posts.dateFormat .Date }}</p>
+        {{ else if $.Site.Params.posts.showAuthor }}
+        <p class="post__author author">By {{ $.Params.author }}.</p>
+        {{ end }}
+        {{ end }}
+    </header>
+    <main class="body">
+        {{ .Content }}
+    </main>
+
+    {{ if ne .Type "page" }}
+    <footer class="post__footer">
+      {{ with .Params.tags }}
+        <div>
+          {{ range . }}
+          <a href="/tags/{{ . }}/">#{{ . }}</a>
+          {{ end }}
+        <div>
+      {{ end }}
+    </footer>
+    {{ end }}
+</article>
+{{ end }}
