@@ -14,3 +14,11 @@ theme = "terrassa"      # Your Hugo theme
 
 [params.hero]
     textColor = "" # Empty for default color
+
+
+[params.posts]
+    showAuthor = false
+    showDate = true
+    showTags = true
+    dateFormat = "2006/1/1"
+    showPostHome = 2

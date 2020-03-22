@@ -69,7 +69,7 @@
 }
 
 .menu__items__item__link::before {
-	background-color: var(--primary-dark);
+	background-color: var(--primary);
 }
 
 .menu__items__item__link:hover::before,
@@ -145,8 +145,10 @@
 	background-position: 100% 20%;
 	background-repeat: no-repeat;
 	background-size: contain;
+  background-color: #6C63FF;
+
 	display: flex;
-	height: 90vh;
+	height: 40vh;
 	justify-content: flex-start;
 	width: 100%;
 }
@@ -158,7 +160,8 @@
 	flex-direction: column;
 	justify-content: center;
 	margin-left: 4.5rem;
-  margin-top: 15rem;
+  margin-top: 6rem;
+  color: #FFFFFF;
 }
 
 .hero__caption > h1 {
@@ -196,21 +199,23 @@
 }
 
 /* CONTENT */
-/* .content {
+
+.content {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-items: center;
-	min-height: 90vh;
-} */
+  margin: 1%;
+}
 
 /* CARD */
-/* .card {
+
+.card__post {
 	margin-bottom: 1.75rem;
 	max-width: 900px;
 	text-justify: distribute;
 	width: 70%;
-} */
+}
 
 .card__header__link {
 	color: var(--primary-text);
@@ -237,11 +242,14 @@
 	grid-template-rows: auto;
 	justify-content: center;
 	padding: 0 20%;
+
+
 }
 
 .post__title {
 	font-size: var(--header);
 	grid-area: title;
+
 }
 
 .post__subtitle {
@@ -261,7 +269,10 @@
 }
 
 .post__body {
+  display: grid;
+  justify-content: center;
 	margin: 1.75rem 24% 0.75rem;
+	font-size: var(--title);
 }
 
 .post__body > figure {
