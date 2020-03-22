@@ -1,6 +1,26 @@
-<section class="section">
-    <h1 class="section__title">{{ .Title }}</h1>
-    <div class="section__content">
-        {{ .Content }}
+<section class="card">
+  <header class="card-header has-background-white-ter">
+    <h1 class="card-header-title">
+      <a href="{{ .Permalink }}" class="card__header__link" alt="{{ .Title }}.">
+        {{ .Title }}
+      </a>
+    </h1>
+  </header>
+    <div class="card-content">
+        {{ .Content | truncate 100 }}
     </div>
+    <footer class="post__footer">
+      {{ with .Params.tags }}
+        <div>
+          {{ range . }}
+          <a href="/tags/{{ . }}/">#{{ . }}</a>
+          {{ end }}
+        <div>
+      {{ end }}
+    </footer>
+    <footer class="card-footer">
+      <h3 class="card-footer-item">
+      {{ dateFormat $.Site.Params.posts.dateFormat .Date }}
+      </h3>
+    </footer>
 </section>
