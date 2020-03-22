@@ -160,7 +160,7 @@
 	flex-direction: column;
 	justify-content: center;
 	margin-left: 4.5rem;
-  margin-top: 15rem;
+  margin-top: 6rem;
   color: #FFFFFF;
 }
 
@@ -179,10 +179,10 @@
 }
 
 /* SECTION */
-.section {
+/* .section {
 	margin: 2.75rem 24%;
 	text-justify: distribute;
-}
+} */
 
 .section__title {
 	padding: 0 20%;
@@ -199,6 +199,7 @@
 }
 
 /* CONTENT */
+
 .content {
 	align-items: center;
 	display: flex;
@@ -208,7 +209,8 @@
 }
 
 /* CARD */
-.card {
+
+.card__post {
 	margin-bottom: 1.75rem;
 	max-width: 900px;
 	text-justify: distribute;

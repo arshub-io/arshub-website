@@ -1,1 +1,6 @@
-
+/* Card start*/
+.card {
+    border-radius: 5px;
+    box-shadow: none;
+}
+/* Card end */
