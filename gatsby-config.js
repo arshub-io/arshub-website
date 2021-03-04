@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
@@ -25,10 +25,10 @@ module.exports = {
       options: {
         fonts: [
           `Montserrat`,
-          `Kosugi` // you can also specify font weights and styles
+          `Kosugi`, // you can also specify font weights and styles
         ],
-        display: 'swap'
-      }
+        display: "swap",
+      },
     },
     `gatsby-plugin-mdx`,
     `gatsby-plugin-image`,

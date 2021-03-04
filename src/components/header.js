@@ -9,9 +9,9 @@ export default function Header() {
         <StaticImage
           src="../images/arshub.svg"
           alt="ArsHub"
+          placeholder="BASE64"
           height={30}
           layout="constrained"
-          color="text"
         />
       </Link>
     </Flex>

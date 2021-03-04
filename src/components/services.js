@@ -14,14 +14,14 @@ export default function Services() {
         >
           <Heading as="h1" color="black" py={3}>
             What We Do?
-            <Text fontSize={6} color="black" py={3}>
-              自社開発
-            </Text>
-            <MyCard
-              title="Cybereum"
-              content="楽曲をアートのように流通させる配信プラットフォームです。 "
-            />
           </Heading>
+          <Text fontSize={6} color="black" py={3}>
+            自社開発
+          </Text>
+          <MyCard
+            title="Cybereum"
+            content="楽曲をアートのように流通させる配信プラットフォームです。 "
+          />
           <Text fontSize={6} color="black" py={3}>
             受託開発
           </Text>
