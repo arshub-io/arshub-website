@@ -1,6 +1,6 @@
 import React from "react";
-import {Flex, Box, Card, Heading, Text, Button} from "rebass";
-import {Label, Input, Textarea} from "@rebass/forms";
+import { Flex, Box, Card, Heading, Text, Button } from "rebass";
+import { Label, Input, Textarea } from "@rebass/forms";
 
 export default function Contact() {
   return (
@@ -19,7 +19,14 @@ export default function Contact() {
           <Text fontSize={5} py={3}>
             お問い合わせ
           </Text>
-          <Box as="form" name="contact" data-netlify="true" data-netlify-recaptcha="true" method="POST">
+          <Box
+            as="form"
+            name="contact"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+            method="POST"
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <Flex alignItems="center">
               <Box width={1} px={2}>
                 <Label py={3} htmlFor="email">
@@ -52,8 +59,8 @@ export default function Contact() {
                   defaultValue=""
                 />
               </Box>
+              <div data-netlify-recaptcha="true"></div>
               <Box my={4} px={2}>
-                <div data-netlify-recaptcha="true"></div>
                 <Button type="submit" backgroundColor="myblue">
                   送信
                 </Button>

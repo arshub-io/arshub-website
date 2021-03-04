@@ -25,7 +25,7 @@ export default function Footer() {
           <Text p={1}>会社名：合同会社ArsHub</Text>
           <Text p={1}>設立：2021年3月</Text>
           <Text p={1}>代表：篠田虎彦</Text>
-          <Text p={1}>資本金：100,0000円</Text>
+          <Text p={1}>資本金：100,000円</Text>
         </Box>
       </Box>
     </Flex>
