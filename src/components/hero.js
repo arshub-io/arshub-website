@@ -5,8 +5,10 @@ import NET from "../vanta/vanta.net.min";
 
 export default function Hero() {
   const [vantaEffect, setVantaEffect] = useState(0);
-  const myRef = useRef(null);
+  const isBrowser = typeof window !== "undefined";
+  const [height, setHeight] = useState(isBrowser ? window.innerHeight : 0);
 
+  const myRef = useRef(null);
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
@@ -16,13 +18,13 @@ export default function Hero() {
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          minHeight: 300.0,
-          minWidth: 300.0,
+          minHeight: 0.0,
+          minWidth: 0.0,
           scale: 1.0,
           scaleMobile: 1.0,
           color: 0x5225e3,
           backgroundColor: 0xffffff,
-          points: 5.0,
+          points: 4.0,
         })
       );
     }
@@ -31,15 +33,26 @@ export default function Hero() {
     };
   }, [vantaEffect]);
 
+  useEffect(() => {
+    if (!isBrowser) return false;
+    const handleResize = () => setHeight(window.innerHeight);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [height]);
+
   return (
-    <div ref={myRef}>
-      <Flex px={4} height="body" alignItems="center">
-        <Box width={1} backgroundColor="">
-          <Text fontSize={6} my={7} fontWeight="bold" alignSelf="center">
-            アーティストの経済圏を構築する
-          </Text>
-        </Box>
-      </Flex>
-    </div>
+    <Flex height={height - 100} flexWrap="wrap" alignItems="center" ref={myRef}>
+      <Box px={4} my={3}>
+        <Text fontSize={6} fontWeight="bold" alignSelf="center">
+          アーティストの経済圏を構築する
+        </Text>
+        <Text fontSize={4} color="gray">
+          ブロックチェーン技術（NFT）を用いた新しい経済圏の構築します
+        </Text>
+      </Box>
+    </Flex>
   );
 }

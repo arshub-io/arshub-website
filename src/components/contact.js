@@ -10,11 +10,10 @@ export default function Contact() {
           sx={{
             p: 4,
             borderRadius: 30,
-            backgroundColor: "mygray",
           }}
         >
-          <Heading as="h1" py={3}>
-            CONTACT
+          <Heading as="h1" color="myblue" py={3}>
+            Contact
           </Heading>
           <Text fontSize={5} py={3}>
             お問い合わせ

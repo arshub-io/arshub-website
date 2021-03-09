@@ -12,23 +12,16 @@ export default function Services() {
             borderRadius: 10,
           }}
         >
-          <Heading as="h1" color="black" py={3}>
-            What We Do?
+          <Heading as="h1" color="myblue" py={3}>
+            Services
           </Heading>
-          <Text fontSize={6} color="black" py={3}>
-            自社開発
-          </Text>
-          <MyCard
-            title="Cybereum"
-            content="楽曲をアートのように流通させる配信プラットフォームです。 "
-          />
-          <Text fontSize={6} color="black" py={3}>
+          <Text fontSize={5} color="black" py={3}>
             受託開発
           </Text>
           <Text fontSize={4} color="black" py={3}>
             ブロックチェーン技術や、機械学習、ディープラーニングを用いたアプリケーション開発を行っています。
           </Text>
-          <Text fontSize={4} color="black" py={3}>
+          <Text fontSize={4} color="black" pt={3}>
             主な取引先
           </Text>
           <ul>
@@ -43,9 +36,32 @@ export default function Services() {
               </Text>
             </li>
           </ul>
-          <MyCard title="ブロックチェーン" content="" />
-          <MyCard title="機械学習・ディープラーニング" content="" />
-          <MyCard title="アプリケーション開発" content="" />
+          <MyCard
+            title="ブロックチェーン開発"
+            content="Ethereumベースのトークン（ERC721等）の開発を行っております。またブロックチェーンのみの開発だけではなく、UI等含めたアプリケーションを含めて開発可能です。"
+          />
+          <MyCard
+            title="Webシステム開発"
+            content="toC向けから社内システムまで幅広く開発を行っております。サーバーやAPI、データベース構築も含めて開発可能です。"
+          />
+          <MyCard
+            title="モバイルアプリ開発"
+            content="Flutterを用いたiOS・Android両方に対応したアプリケーションの開発を行っております。"
+          />
+        </Card>
+        <Card
+          sx={{
+            p: 4,
+            borderRadius: 10,
+          }}
+        >
+          <Text fontSize={5} color="black" py={2}>
+            自社開発
+          </Text>
+          <MyCard
+            title="[開発中] Cybereum"
+            content="楽曲をアートのように流通させる配信プラットフォームです。 "
+          />
         </Card>
       </Box>
     </Flex>
