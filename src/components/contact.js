@@ -1,4 +1,5 @@
 import React from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import { Flex, Box, Card, Heading, Text, Button } from "rebass";
 import { Label, Input, Textarea } from "@rebass/forms";
 
@@ -58,9 +59,9 @@ export default function Contact() {
                   defaultValue=""
                 />
               </Box>
-              <div data-netlify-recaptcha="true"></div>
               <Box my={4} px={2}>
-                <Button type="submit" backgroundColor="myblue">
+                <ReCAPTCHA sitekey="{process.env.SITE_RECAPTCHA_KEY}" />
+                <Button my={4} type="submit" backgroundColor="myblue">
                   送信
                 </Button>
               </Box>

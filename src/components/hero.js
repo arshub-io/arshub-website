@@ -8,7 +8,7 @@ export default function Hero() {
   const [vantaEffect, setVantaEffect] = useState(0);
   const window = getWindow();
   const isBrowser = typeof window !== "undefined";
-  const [height, setHeight] = useState(isBrowser ? window.innerHeight : 0);
+  const [height, setHeight] = useState(isBrowser ? window.innerHeight : 900);
 
   const myRef = useRef(null);
   useEffect(() => {
@@ -36,14 +36,13 @@ export default function Hero() {
   }, [vantaEffect]);
 
   useEffect(() => {
-    if (!isBrowser) return false;
     const handleResize = () => setHeight(window.innerHeight);
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [isBrowser, height]);
+  }, [window, height]);
 
   return (
     <Flex height={height - 100} flexWrap="wrap" alignItems="center" ref={myRef}>
