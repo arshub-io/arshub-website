@@ -27,4 +27,13 @@ export default {
   shadows: {
     card: "0px 10px 10px -5px rgba(0, 0, 0, 0.125)",
   },
+  variants: {
+    nav: {
+      color: "black",
+      textDecoration: "none",
+      "&:hover": {
+        color: "myblue",
+      },
+    },
+  },
 };

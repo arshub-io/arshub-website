@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Link, Box, Text } from "rebass";
+import { Flex, Link, Text } from "rebass";
 import { StaticImage } from "gatsby-plugin-image";
 
 export default function Header() {
@@ -16,7 +16,7 @@ export default function Header() {
       </Link>
       <Flex ml="auto">
         <Link px={3} variant="nav" href="/services">
-          <Text>Services</Text>
+          <Text href="services">Services</Text>
         </Link>
         <Link px={3} variant="nav" href="/">
           <Text>Contact</Text>
