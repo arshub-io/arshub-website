@@ -1,8 +1,12 @@
+/* eslint-disable */
 const path = require("path");
 
 module.exports = {
   siteMetadata: {
     title: `ArsHub`,
+  },
+  flags: {
+    DEV_SSR: true,
   },
   plugins: [
     {

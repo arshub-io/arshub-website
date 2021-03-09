@@ -60,7 +60,7 @@ export default function Contact() {
                 />
               </Box>
               <Box my={4} px={2}>
-                <ReCAPTCHA sitekey="{process.env.SITE_RECAPTCHA_KEY}" />
+                <ReCAPTCHA sitekey={process.env.SITE_RECAPTCHA_KEY} />
                 <Button my={4} type="submit" backgroundColor="myblue">
                   送信
                 </Button>

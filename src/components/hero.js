@@ -1,14 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import { getWindow } from "ssr-window";
 import { Flex, Box, Text } from "rebass";
 import * as THREE from "three";
 import NET from "../vanta/vanta.net.min";
+import useWindowSize from "../hooks/useWindowSize";
 
 export default function Hero() {
   const [vantaEffect, setVantaEffect] = useState(0);
-  const window = getWindow();
-  const isBrowser = typeof window !== "undefined";
-  const [height, setHeight] = useState(isBrowser ? window.innerHeight : 900);
+  const { height } = useWindowSize();
 
   const myRef = useRef(null);
   useEffect(() => {
@@ -34,15 +32,6 @@ export default function Hero() {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
-
-  useEffect(() => {
-    const handleResize = () => setHeight(window.innerHeight);
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [window, height]);
 
   return (
     <Flex height={height - 100} flexWrap="wrap" alignItems="center" ref={myRef}>

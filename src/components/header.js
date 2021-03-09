@@ -18,7 +18,7 @@ export default function Header() {
         <Link px={3} variant="nav" href="/services">
           <Text href="services">Services</Text>
         </Link>
-        <Link px={3} variant="nav" href="/">
+        <Link px={3} variant="nav" href="/contact">
           <Text>Contact</Text>
         </Link>
       </Flex>

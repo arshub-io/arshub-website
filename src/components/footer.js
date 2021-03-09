@@ -13,7 +13,7 @@ export default function Footer() {
               alt="ArsHub"
               height={30}
               layout="constrained"
-              color="text"
+              placeholder="BASE64"
             />
           </Link>
           <Box py={3} color="gray">
