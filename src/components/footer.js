@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export default function Footer() {
   return (
-    <Flex as="footer" p={3} alignItems="center" backgroundColor="mygray">
+    <Flex as="footer" p={3} alignItems="center" backgroundColor="">
       <Box p={4} width={1}>
         <Link to="/">
           <StaticImage
