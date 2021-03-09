@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Flex, Box, Button } from "rebass";
+import { Flex, Button } from "rebass";
 
 import { StaticImage } from "gatsby-plugin-image";
 

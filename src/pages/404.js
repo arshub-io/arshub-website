@@ -1,8 +1,10 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { navigate } from "gatsby";
 
 const NotFoundPage = () => {
-  navigate("/");
+  useEffect(() => {
+    navigate("/");
+  }, []);
   return <></>;
 };
 

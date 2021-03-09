@@ -1,7 +1,7 @@
 import React from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import {Flex, Box, Card, Heading, Text, Button} from "rebass";
-import {Label, Input, Textarea} from "@rebass/forms";
+import { Flex, Box, Card, Heading, Text, Button } from "rebass";
+import { Label, Input, Textarea } from "@rebass/forms";
 
 export default function Contact() {
   return (

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 import { navigate } from "gatsby";
-import Layout from "../components/layout";
 import { Flex, Box, Text, Button } from "rebass";
 import { Link } from "gatsby";
 
