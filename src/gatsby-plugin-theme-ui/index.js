@@ -16,12 +16,26 @@ export default {
     root: {
       fontFamily: "body",
     },
+    a: {
+      color: "tomato",
+    },
   },
   buttons: {
     primary: {
-      backgroundColor: "mygray",
+      backgroundColor: "myblue",
+      borderStyle: "solid",
+      borderColor: "myblue",
+      borderWidth: "1px",
       "&:hover": {
-        backgroundColor: "tomato",
+        backgroundColor: "rgba(0,0,0,0)",
+        color: "black",
+      },
+    },
+    nav: {
+      color: "black",
+      backgroundColor: "white",
+      "&:hover": {
+        color: "myblue",
       },
     },
   },

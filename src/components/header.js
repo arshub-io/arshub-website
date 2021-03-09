@@ -1,11 +1,13 @@
 import React from "react";
-import { Flex, Link, Text } from "rebass";
+import { Link } from "gatsby";
+import { Flex, Box, Button } from "rebass";
+
 import { StaticImage } from "gatsby-plugin-image";
 
 export default function Header() {
   return (
     <Flex p={4} alignItems="center">
-      <Link href="/">
+      <Link to="/">
         <StaticImage
           src="../images/arshub.svg"
           alt="ArsHub"
@@ -15,11 +17,11 @@ export default function Header() {
         />
       </Link>
       <Flex ml="auto">
-        <Link px={3} variant="nav" href="/services">
-          <Text href="services">Services</Text>
+        <Link to="/services">
+          <Button variant="nav">Services</Button>
         </Link>
-        <Link px={3} variant="nav" href="/contact">
-          <Text>Contact</Text>
+        <Link to="/contact">
+          <Button variant="nav">Contact</Button>
         </Link>
       </Flex>
     </Flex>

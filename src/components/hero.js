@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Flex, Box, Text } from "rebass";
+import { Link } from "gatsby";
+import { Flex, Box, Text, Button } from "rebass";
 import * as THREE from "three";
 import NET from "../vanta/vanta.net.min";
 import useWindowSize from "../hooks/useWindowSize";
@@ -42,6 +43,13 @@ export default function Hero() {
         <Text fontSize={4} color="gray">
           ブロックチェーン技術（NFT）を用いた新しい経済圏の構築します
         </Text>
+        <Box py={3}>
+          <Link to="/services">
+            <Button variant="primary" p={3}>
+              Our Services
+            </Button>
+          </Link>
+        </Box>
       </Box>
     </Flex>
   );

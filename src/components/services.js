@@ -8,7 +8,8 @@ export default function Services() {
       <Box width={[1, 1]} alignSelf="center">
         <Card
           sx={{
-            p: 4,
+            px: 2,
+            py: 4,
             borderRadius: 10,
           }}
         >
@@ -51,7 +52,8 @@ export default function Services() {
         </Card>
         <Card
           sx={{
-            p: 4,
+            px: 2,
+            py: 4,
             borderRadius: 10,
           }}
         >

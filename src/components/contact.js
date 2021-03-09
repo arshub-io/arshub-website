@@ -9,7 +9,8 @@ export default function Contact() {
       <Box width={[1, 1]} alignSelf="center">
         <Card
           sx={{
-            p: 4,
+            px: 2,
+            py: 4,
             borderRadius: 30,
           }}
         >
@@ -25,6 +26,7 @@ export default function Contact() {
             data-netlify="true"
             data-netlify-recaptcha="true"
             method="POST"
+            action="/thanks"
           >
             <input type="hidden" name="form-name" value="contact" />
             <Flex alignItems="center">
