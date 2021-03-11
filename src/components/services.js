@@ -39,7 +39,7 @@ export default function Services() {
           </ul>
           <MyCard
             title="ブロックチェーン開発"
-            content="Ethereumベースのトークン（ERC721等）の開発を行っております。またブロックチェーンのみの開発だけではなく、UI等含めたアプリケーションを含めて開発可能です。"
+            content="Ethereumベースのトークン（ERC721等）の開発を行っております。またブロックチェーン開発だけではなく、UI等含めたアプリケーションを含めて開発可能です。"
           />
           <MyCard
             title="Webシステム開発"
