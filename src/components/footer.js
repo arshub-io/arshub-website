@@ -17,7 +17,7 @@ export default function Footer() {
           />
         </Link>
         <Box py={3} color="gray">
-          <Text p={1}>東京都 杉並区 善福寺2丁目28番地20号</Text>
+          <Text p={1}>東京都 杉並区</Text>
           <Text p={1}>Copyright ©︎ArsHub Inc.</Text>
         </Box>
       </Box>
@@ -25,7 +25,7 @@ export default function Footer() {
         <Box color="gray">
           <Text p={1}>会社名：合同会社ArsHub</Text>
           <Text p={1}>設立：2021年2月</Text>
-          <Text p={1}>代表：篠田虎彦、樽見彰仁</Text>
+          <Text p={1}>代表：篠田虎彦</Text>
           <Text p={1}>資本金：100,000円</Text>
         </Box>
       </Box>
