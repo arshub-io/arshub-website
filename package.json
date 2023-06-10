@@ -19,7 +19,7 @@
     "@mdx-js/react": "^1.6.22",
     "@rebass/forms": "^4.0.6",
     "dotenv": "^8.2.0",
-    "gatsby": "^3.0.0",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-mdx": "^2.0.0",
